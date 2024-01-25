@@ -1,0 +1,42 @@
+[
+    {
+        "image": {
+            "primary": "./src/assets/shirts/reserva-shirt-2.jpg",
+            "secondary": "./src/assets/shirts/reserva-video-2.jpg"
+        },
+        "name": "Camisa",
+        "price": 55.00
+    },
+    {
+        "image": {
+            "primary": "./src/assets/shirts/reserva-shirt-4.jpg",
+            "secondary": "./src/assets/shirts/reserva-video-4.jpg" 
+        },
+        "name": "Camisa",
+        "price": 55.00
+    },
+    {
+        "image": {
+            "primary": "./src/assets/shirts/reserva-shirt-5.jpg",
+            "secondary": "./src/assets/shirts/reserva-video-5.jpg" 
+        },
+        "name": "Camisa",
+        "price": 55.00
+    },
+    {
+        "image": {
+            "primary": "./src/assets/shirts/reserva-shirt-6.jpg",
+            "secondary": "./src/assets/shirts/reserva-video-6.jpg" 
+        },
+        "name": "Camisa",
+        "price": 55.00
+    },
+    {
+        "image": {
+            "primary": "./src/assets/shirts/reserva-shirt-7.jpg",
+            "secondary": "./src/assets/shirts/reserva-video-7.jpg" 
+        },
+        "name": "Camisa",
+        "price": 55.00
+    }
+]
