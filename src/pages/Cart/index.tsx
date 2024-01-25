@@ -1,7 +1,9 @@
+import Styles from './styles'
+
 export function Cart() {
   return (
-    <div>
-      <h1>cart</h1>
-    </div>
+    <Styles.Container>
+      <h1>Cart</h1>
+    </Styles.Container>
   )
 }

@@ -1,7 +1,9 @@
+import Styles from './styles'
+
 export function Home() {
   return (
-    <div>
+    <Styles.Container>
       <h1>home</h1>
-    </div>
+    </Styles.Container>
   )
 }

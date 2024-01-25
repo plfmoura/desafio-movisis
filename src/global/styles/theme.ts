@@ -19,12 +19,11 @@ export default {
     secondary: 'Plus Jakarta Sans',
   },
   fontsSize: {
-    regular: '0.75rem',
-    newRegular: '1rem',
+    small: '0.75rem',
+    normal: '1rem',
     medium: '1.25rem',
-    newMedium: '1.875rem',
-    large: '2.25rem',
-    newLarge: '3rem',
-    big: '4.658rem',
+    large: '1.875rem',
+    extraLarge: '2.25rem',
+    doubleExtraLarge: '3rem',
   },
 }
