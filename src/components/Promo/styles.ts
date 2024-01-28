@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const PromoContainer = styled.section`
   width: 100%;
   height: 6rem;
+  margin-top: 1rem;
 
   .align-promo-cards {
     display: flex;
