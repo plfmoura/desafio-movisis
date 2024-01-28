@@ -4,7 +4,7 @@ import {
   Dispatch,
   SetStateAction,
   ReactNode,
-  // useEffect,
+  useEffect,
 } from 'react'
 import data from '../data/products.json'
 
@@ -45,10 +45,15 @@ export function CartProvider({ children }: CartContextProviderProps) {
   const [amount, setAmount] = useState<number>(0)
   const [products, setProducts] = useState<Product[]>([])
 
-  // useEffect(() => {
-  //   console.log(amount)
-  //   console.log(products)
-  // }, [products, amount])
+  useEffect(() => {
+    if (products.length > 0)
+      return localStorage.setItem('cart', JSON.stringify(products))
+
+    const checkStorageCart = localStorage.getItem('cart')
+    if (products.length === 0 && checkStorageCart) {
+      return localStorage.removeItem('cart')
+    }
+  }, [products])
 
   const addCartProduct = (id: string) => {
     const selectedProduct = data.find((product) => product.id === id)
