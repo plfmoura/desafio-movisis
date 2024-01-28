@@ -92,6 +92,7 @@ export function CartProvider({ children }: CartContextProviderProps) {
   const clearCart = () => {
     setAmount(0)
     setProducts([])
+    localStorage.removeItem('cart')
   }
 
   const cartValues: CartContextProps = {

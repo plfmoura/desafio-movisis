@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const CartCardContainer = styled.div`
-  width: 600px;
+  width: 100%;
   height: 6rem;
   display: flex;
   justify-content: space-between;
