@@ -48,7 +48,17 @@ export function CartProvider({ children }: CartContextProviderProps) {
 
   useEffect(() => {
     const checkStorageCart = localStorage.getItem('cart')
-    if (checkStorageCart) return setProducts(JSON.parse(checkStorageCart))
+    if (checkStorageCart) {
+      setProducts(JSON.parse(checkStorageCart))
+
+      const parsedValues: Product[] = JSON.parse(checkStorageCart)
+
+      const totalAmount = parsedValues.reduce(
+        (sum, item) => sum + item.price,
+        0,
+      )
+      setAmount(totalAmount)
+    }
   }, [])
 
   useEffect(() => {
