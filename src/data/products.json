@@ -3,45 +3,55 @@
         "id": "1578",
         "image": [
             "./src/assets/shirts/reserva-shirt-2.jpg",
+            "./src/assets/shirts/reserva-shirt-2.jpg",
             "./src/assets/shirts/reserva-video-2.jpg"
         ],
         "name": "Camisa",
+        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
         "price": 79.00
     },
     {
         "id": "1021",
         "image": [
             "./src/assets/shirts/reserva-shirt-4.jpg", 
+            "./src/assets/shirts/reserva-shirt-4.jpg", 
             "./src/assets/shirts/reserva-video-4.jpg" 
         ],
         "name": "Camisa",
+        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
         "price": 49.00
     },
     {
         "id": "3420",
         "image": [
             "./src/assets/shirts/reserva-shirt-5.jpg", 
+            "./src/assets/shirts/reserva-shirt-5.jpg", 
             "./src/assets/shirts/reserva-video-5.jpg"
         ], 
         "name": "Camisa",
+        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
         "price": 89.90
     },
     {
         "id": "9800",
         "image": [
             "./src/assets/shirts/reserva-shirt-6.jpg", 
+            "./src/assets/shirts/reserva-shirt-6.jpg", 
             "./src/assets/shirts/reserva-video-6.jpg" 
         ],
         "name": "Camisa",
+        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
         "price": 149.00
     },
     {
         "id": "6755",
         "image": [
             "./src/assets/shirts/reserva-shirt-7.jpg", 
+            "./src/assets/shirts/reserva-shirt-7.jpg", 
             "./src/assets/shirts/reserva-video-7.jpg" 
         ],
         "name": "Camisa",
+        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
         "price": 169.00
     }
 ]

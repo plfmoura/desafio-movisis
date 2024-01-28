@@ -12,6 +12,7 @@ export interface Product {
   id: string
   image: string[]
   name: string
+  info: string
   price: number
 }
 
@@ -46,13 +47,13 @@ export function CartProvider({ children }: CartContextProviderProps) {
   const [products, setProducts] = useState<Product[]>([])
 
   useEffect(() => {
+    const checkStorageCart = localStorage.getItem('cart')
+    if (checkStorageCart) return setProducts(JSON.parse(checkStorageCart))
+  }, [])
+
+  useEffect(() => {
     if (products.length > 0)
       return localStorage.setItem('cart', JSON.stringify(products))
-
-    const checkStorageCart = localStorage.getItem('cart')
-    if (products.length === 0 && checkStorageCart) {
-      return localStorage.removeItem('cart')
-    }
   }, [products])
 
   const addCartProduct = (id: string) => {
@@ -66,6 +67,7 @@ export function CartProvider({ children }: CartContextProviderProps) {
 
   const removeCartProduct = (id: string) => {
     const selectedProduct = data.find((product) => product.id === id)
+    localStorage.removeItem('cart')
 
     if (selectedProduct) {
       setProducts((prevProducts) => {
@@ -81,8 +83,9 @@ export function CartProvider({ children }: CartContextProviderProps) {
       })
 
       const productFound = products.find((product) => product.id === id)
-      if (amount !== 0 && productFound)
+      if (amount !== 0 && productFound) {
         setAmount(amount - selectedProduct.price)
+      }
     }
   }
 
