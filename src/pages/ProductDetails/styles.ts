@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
-const Container = styled.header`
+const ProductContainer = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  gap: 2rem;
-  flex-wrap: wrap;
   margin-top: 2rem;
 
   .card-container {
@@ -18,5 +16,5 @@ const Container = styled.header`
 `
 
 export default {
-  Container,
+  ProductContainer,
 }

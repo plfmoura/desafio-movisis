@@ -4,18 +4,21 @@ import { Cart } from './pages/Cart'
 import Header from './components/Header'
 import { Products } from './pages/Products'
 import Hero from './components/Hero'
+import ProductDetails from './pages/ProductDetails'
 
 export function Router() {
   const location = useLocation()
+  const showHeroComponent = ['/', '/about']
 
   return (
     <>
       <Header />
-      {location.pathname !== '/products' && <Hero />}
+      {showHeroComponent.includes(location.pathname) && <Hero />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
       </Routes>
     </>
   )

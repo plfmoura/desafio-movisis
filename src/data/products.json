@@ -1,42 +1,47 @@
 [
     {
-        "image": {
-            "primary": "./src/assets/shirts/reserva-shirt-2.jpg",
-            "secondary": "./src/assets/shirts/reserva-video-2.jpg"
-        },
+        "id": "1578",
+        "image": [
+            "./src/assets/shirts/reserva-shirt-2.jpg",
+            "./src/assets/shirts/reserva-video-2.jpg"
+        ],
         "name": "Camisa",
-        "price": 55.00
+        "price": 79.00
     },
     {
-        "image": {
-            "primary": "./src/assets/shirts/reserva-shirt-4.jpg",
-            "secondary": "./src/assets/shirts/reserva-video-4.jpg" 
-        },
+        "id": "1021",
+        "image": [
+            "./src/assets/shirts/reserva-shirt-4.jpg", 
+            "./src/assets/shirts/reserva-video-4.jpg" 
+        ],
         "name": "Camisa",
-        "price": 55.00
+        "price": 49.00
     },
     {
-        "image": {
-            "primary": "./src/assets/shirts/reserva-shirt-5.jpg",
-            "secondary": "./src/assets/shirts/reserva-video-5.jpg" 
-        },
+        "id": "3420",
+        "image": [
+            "./src/assets/shirts/reserva-shirt-5.jpg", 
+            "./src/assets/shirts/reserva-video-5.jpg"
+        ], 
         "name": "Camisa",
-        "price": 55.00
+        "price": 89.90
     },
     {
-        "image": {
-            "primary": "./src/assets/shirts/reserva-shirt-6.jpg",
-            "secondary": "./src/assets/shirts/reserva-video-6.jpg" 
-        },
+        "id": "9800",
+        "image": [
+            "./src/assets/shirts/reserva-shirt-6.jpg", 
+            "./src/assets/shirts/reserva-video-6.jpg" 
+        ],
         "name": "Camisa",
-        "price": 55.00
+        "price": 149.00
     },
     {
-        "image": {
-            "primary": "./src/assets/shirts/reserva-shirt-7.jpg",
-            "secondary": "./src/assets/shirts/reserva-video-7.jpg" 
-        },
+        "id": "6755",
+        "image": [
+            "./src/assets/shirts/reserva-shirt-7.jpg", 
+            "./src/assets/shirts/reserva-video-7.jpg" 
+        ],
         "name": "Camisa",
-        "price": 55.00
+        "price": 169.00
     }
 ]

@@ -1,8 +1,12 @@
 import { Person, Search, ShoppingBag } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import Styles from './styles'
+import { useContext } from 'react'
+import { CartContext } from '../../contexts/CartContext'
 
 export default function Header() {
+  const { products } = useContext(CartContext)
+
   return (
     <Styles.Container>
       <Styles.NavContainer className="nav-container">
@@ -28,6 +32,7 @@ export default function Header() {
           <li className="icon-item">
             <Link to="/cart">
               <ShoppingBag />
+              {products.length !== 0 && products.length}
             </Link>
           </li>
           <li className="icon-item">
