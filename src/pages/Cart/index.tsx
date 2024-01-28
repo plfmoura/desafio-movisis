@@ -4,6 +4,7 @@ import CartCard from '../../components/CartCard'
 
 import Styles from './styles'
 import { Close, Label, Lock } from '@mui/icons-material'
+import Promo from '../../components/Promo'
 
 export function Cart() {
   const { products, clearCart, amount } = useContext(CartContext)
@@ -86,6 +87,7 @@ export function Cart() {
       ) : (
         <span>cart empty</span>
       )}
+      <Promo />
     </Styles.CartContainer>
   )
 }

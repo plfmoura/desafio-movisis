@@ -4,8 +4,8 @@ const CartContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 1200px;
+  margin: 2.5rem auto 0;
   min-height: 100vh;
   color: ${({ theme }) => theme.colors.gray_600};
 
@@ -25,8 +25,8 @@ const CartContainer = styled.main`
   }
 
   .align-cart-content {
-    width: 1100px;
-    height: 600px;
+    width: 100%;
+    min-height: 350px;
     display: flex;
     gap: 2rem;
   }
