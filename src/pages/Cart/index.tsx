@@ -43,7 +43,7 @@ export function Cart() {
                   <input type="text" placeholder="insira seu cupom" />
                   <button
                     onClick={() =>
-                      setCoupon({ code: 'MEUCUPOM', discount: 10 })
+                      setCoupon({ code: 'MEUCUPOM', discount: 30 })
                     }
                   >
                     Verificar

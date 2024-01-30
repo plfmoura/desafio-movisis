@@ -18,8 +18,8 @@ export default function Promo() {
           >
             <img src={item.image[0]} alt="promo product image" />
             <div>
-              <p>{item.name}</p>
-              <p>${item.price.toFixed(2)}</p>
+              <p className="text-name">{item.name}</p>
+              <p className="text-price">${item.price.toFixed(2)}</p>
             </div>
           </div>
         ))}

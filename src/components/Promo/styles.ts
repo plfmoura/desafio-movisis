@@ -4,6 +4,7 @@ const PromoContainer = styled.section`
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
+  font-weight: 600;
 
   .align-promo-cards {
     display: flex;
@@ -26,6 +27,16 @@ const PromoContainer = styled.section`
         justify-content: space-between;
       }
     }
+  }
+
+  .text-name {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-size: ${({ theme }) => theme.fontsSize.small};
+  }
+
+  .text-price {
+    color: #e5002b;
   }
 `
 

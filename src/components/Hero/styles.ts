@@ -8,14 +8,21 @@ const HeroContainer = styled.section`
   flex-direction: column;
   margin-top: 1rem;
   user-select: none;
+  color: #333;
 
   .align-text {
-    background: ${({ theme }) => theme.colors.gray_900};
+    background: rgb(250, 250, 250);
+    background: linear-gradient(
+      90deg,
+      rgba(250, 250, 250, 0.937395026369923) 2%,
+      rgba(210, 222, 231, 1) 32%,
+      rgba(207, 207, 207, 0.9654062308517157) 70%,
+      rgba(233, 209, 215, 0.9093838218881303) 100%
+    );
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #fff;
     text-transform: uppercase;
     padding: 2rem;
 
@@ -28,21 +35,42 @@ const HeroContainer = styled.section`
         margin-bottom: 1rem;
       }
 
-      p {
-        text-decoration: underline;
+      button {
+        background: ${({ theme }) => theme.colors.gray_900};
+        width: 280px;
+        height: 3rem;
         color: #fff;
+        font-size: ${({ theme }) => theme.fontsSize.medium};
+        letter-spacing: 5px;
       }
     }
   }
 
   span {
-    color: #fff;
-    font-size: 8rem;
+    font-size: 6rem;
+    font-family: ${({ theme }) => theme.fonts.secondary};
     font-weight: 600;
     white-space: nowrap;
+    border: 3px dotted #111;
+    padding: 1rem;
   }
 `
 
+const DialogContainer = styled.div`
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  span {
+    font-family: ${({ theme }) => theme.fonts.secondary};
+    font-size: ${({ theme }) => theme.fontsSize.extraLarge};
+    letter-spacing: 5px;
+    border: 3px dotted #fff;
+    padding: 1rem;
+  }
+`
 export default {
   HeroContainer,
+  DialogContainer,
 }
