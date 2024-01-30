@@ -34,6 +34,7 @@ const GridContainer = styled.section`
     background: url('/category-2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 
     color: #fff;
     padding: 2rem;
@@ -54,6 +55,7 @@ const GridContainer = styled.section`
     background: url('/category-1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 
     display: flex;
     justify-content: space-between;

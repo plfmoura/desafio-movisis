@@ -3,17 +3,20 @@ import { CartContext } from '../../contexts/CartContext'
 
 import Styles from './styles'
 
-type CartCardProps = {
+export type CardProps = {
   data: {
     id: string
     image: string[]
     name: string
     info: string
+    color: string
+    class: string
     price: number
+    rating: number
   }
 }
 
-export default function CartCard({ data }: CartCardProps) {
+export default function CartCard({ data }: CardProps) {
   const { products, removeCartProduct, addCartProduct } =
     useContext(CartContext)
 

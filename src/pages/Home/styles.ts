@@ -31,6 +31,7 @@ const Container = styled.main`
 
     .card-container {
       flex: 1;
+      cursor: pointer;
     }
   }
 `

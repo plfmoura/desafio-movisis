@@ -19,50 +19,29 @@ export interface Product {
   rating: number
 }
 
-interface CartContextProps {
-  amount: number
+interface FavoriteContextProps {
   products: Product[]
-  setAmount: Dispatch<SetStateAction<number>>
   setProducts: Dispatch<SetStateAction<Product[]>>
   removeCartProduct: (id: string) => void
   addCartProduct: (id: string) => void
-  clearCart: () => void
 }
 
-const defaultValues: CartContextProps = {
-  amount: 0,
-  setAmount: () => {},
+const defaultValues: FavoriteContextProps = {
   products: [],
   setProducts: () => {},
   removeCartProduct: () => {},
   addCartProduct: () => {},
-  clearCart: () => {},
 }
 
-type CartContextProviderProps = {
+type FavoriteContextProviderProps = {
   children: ReactNode
 }
 
-export const CartContext = createContext<CartContextProps>(defaultValues)
+export const FavoriteContext =
+  createContext<FavoriteContextProps>(defaultValues)
 
-export function CartProvider({ children }: CartContextProviderProps) {
-  const [amount, setAmount] = useState<number>(0)
+export function FavoriteProvider({ children }: FavoriteContextProviderProps) {
   const [products, setProducts] = useState<Product[]>([])
-
-  useEffect(() => {
-    const checkStorageCart = localStorage.getItem('cart')
-    if (checkStorageCart) {
-      setProducts(JSON.parse(checkStorageCart))
-
-      const parsedValues: Product[] = JSON.parse(checkStorageCart)
-
-      const totalAmount = parsedValues.reduce(
-        (sum, item) => sum + item.price,
-        0,
-      )
-      setAmount(totalAmount)
-    }
-  }, [])
 
   useEffect(() => {
     if (products.length > 0)
@@ -74,7 +53,6 @@ export function CartProvider({ children }: CartContextProviderProps) {
 
     if (selectedProduct) {
       setProducts((prevProducts) => [...prevProducts, selectedProduct])
-      setAmount((prevAmount) => prevAmount + selectedProduct.price)
     }
   }
 
@@ -94,31 +72,19 @@ export function CartProvider({ children }: CartContextProviderProps) {
 
         return prevProducts
       })
-
-      const productFound = products.find((product) => product.id === id)
-      if (amount !== 0 && productFound) {
-        setAmount(amount - selectedProduct.price)
-      }
     }
   }
 
-  const clearCart = () => {
-    setAmount(0)
-    setProducts([])
-    localStorage.removeItem('cart')
-  }
-
-  const cartValues: CartContextProps = {
-    amount,
-    setAmount,
+  const cartValues: FavoriteContextProps = {
     products,
     setProducts,
     removeCartProduct,
     addCartProduct,
-    clearCart,
   }
 
   return (
-    <CartContext.Provider value={cartValues}>{children}</CartContext.Provider>
+    <FavoriteContext.Provider value={cartValues}>
+      {children}
+    </FavoriteContext.Provider>
   )
 }
