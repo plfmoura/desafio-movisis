@@ -1,57 +1,302 @@
 [
     {
-        "id": "1578",
+        "id": "1020",
         "image": [
-            "./src/assets/shirts/reserva-shirt-2.jpg",
-            "./src/assets/shirts/reserva-shirt-2.jpg",
-            "./src/assets/shirts/reserva-video-2.jpg"
+            "/shirts/camisa-1.jpg"
         ],
-        "name": "Camisa",
-        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
-        "price": 79.00
+        "name": "Camisa básica pica-pau estampado",
+        "info": "Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "rosa",
+        "class": "camisa",
+        "price": 79.90,
+        "rating": 4.7
     },
     {
         "id": "1021",
         "image": [
-            "./src/assets/shirts/reserva-shirt-4.jpg", 
-            "./src/assets/shirts/reserva-shirt-4.jpg", 
-            "./src/assets/shirts/reserva-video-4.jpg" 
+            "/shirts/camisa-2.jpg"
         ],
-        "name": "Camisa",
-        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
-        "price": 49.00
+        "name": "Camisa básica pica-pau bordado",
+        "info": "Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "bege",
+        "class": "camisa",
+        "price": 89.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1022",
+        "image": [
+            "/shirts/camisa-3.jpg"
+        ],
+        "name": "Camisa básica pica-pau bordado",
+        "info": ".Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "branco",
+        "class": "camisa",
+        "price": 119.90,
+        "rating": 5
+    },
+    {
+        "id": "1023",
+        "image": [
+            "/shirts/camisa-4.jpg"
+        ],
+        "name": "Camisa básica pica-pau bordado",
+        "info": "Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "branco",
+        "class": "camisa",
+        "price": 129.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1024",
+        "image": [
+            "/shirts/camisa-5.jpg"
+        ],
+        "name": "Camisa básica pica-pau bordado",
+        "info": "Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "preto",
+        "class": "camisa",
+        "price": 79.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1025",
+        "image": [
+            "/shirts/camisa-6.jpg"
+        ],
+        "name": "Camisa básica pica-pau bordado",
+        "info": "Um ícone da Reserva, pra você ir onde quiser. A Camiseta Básica Brasa Pica-Pau Bordado tem modelagem regular e visual clean, o que deixa ela bem versátil. Dá pra usar naqueles dias mais casuais no trabalho ou até mesmo em momentos de lazer. O principal detalhe da peça vem com o nosso famoso Pica-Pau bordado no peito. Ela vai bem com tudo: bermudas, jeans e shorts. Um must-have pro seu estilo! Camiseta Reserva produzida eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "branco",
+        "class": "camisa",
+        "price": 99.90,
+        "rating": 4.9
+    },
+    {
+        "id": "1101",
+        "image": [
+            "/shirts/polo-1.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "branco",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 4.9
+    },
+    {
+        "id": "1102",
+        "image": [
+            "/shirts/polo-2.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "vermelho",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1103",
+        "image": [
+            "/shirts/polo-3.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "branco",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 5
+    },
+    {
+        "id": "1104",
+        "image": [
+            "/shirts/polo-4.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "azul",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 5
+    },
+    {
+        "id": "1105",
+        "image": [
+            "/shirts/polo-5.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "preto",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1106",
+        "image": [
+            "/shirts/polo-6.jpg"
+        ],
+        "name": "polo piquet linho",
+        "info": "A Polo Piquet Linho da Reserva é perfeita para quem busca estilo e conforto. Feita em malha piquet com linho, ela é super leve e proporciona uma sensação agradável ao vestir. A gola e os punhos, em retilínea com linho, são na mesma cor da peça, adicionando um toque de elegância. O fechamento em botões caseados de corozo traz um diferencial único. ",
+        "color": "branco",
+        "class": "polo",
+        "price": 149.90,
+        "rating": 4.7
     },
     {
         "id": "3420",
         "image": [
-            "./src/assets/shirts/reserva-shirt-5.jpg", 
-            "./src/assets/shirts/reserva-shirt-5.jpg", 
-            "./src/assets/shirts/reserva-video-5.jpg"
+            "/shirts/casaco-6.jpg"
         ], 
-        "name": "Camisa",
-        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
-        "price": 89.90
+        "name": "Moletom campeao mundial",
+        "info": "Quando chegar o friozinho, o Hoodie de Moletom Campeão Mundial é a escolha pra todo rubro-negro que se orgulha de uma das maiores conquistas da história do Mengão. Em moletom, a peça traz um brasão estampado na parte da frente, que faz menção à conquista do título. No detalhe, o capuz tem uma etiqueta vermelha e preta, com o Pica-Pau da Reserva. Casaco produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P. O modelo tem 1,90 m de altura, 95 cm de tórax e veste 40.",
+        "color": "preto",
+        "class": "casaco",
+        "price": 189.90,
+        "rating": 4.9
     },
     {
         "id": "9800",
         "image": [
-            "./src/assets/shirts/reserva-shirt-6.jpg", 
-            "./src/assets/shirts/reserva-shirt-6.jpg", 
-            "./src/assets/shirts/reserva-video-6.jpg" 
+            "/shirts/casaco-5.jpg"
         ],
-        "name": "Camisa",
-        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
-        "price": 149.00
+        "name": "Moletom pica pau bordado",
+        "info": "Uma nova edição do moletom básico Reserva na cor branca, agora com o Pica-Pau bordado também em branco. É o casaco que faltava para compor seu visual, pra você não passar frio. Produzido em 50% algodão e 50% poliéster, ele traz conforto para os dias mais nublados, além de ter um caimento perfeito para todos os tipos de corpos. Impossível resistir! Compre já o seu. Este Moletom Reserva foi produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "preto",
+        "class": "casaco",
+        "price": 159.90,
+        "rating": 4.7
     },
     {
         "id": "6755",
         "image": [
-            "./src/assets/shirts/reserva-shirt-7.jpg", 
-            "./src/assets/shirts/reserva-shirt-7.jpg", 
-            "./src/assets/shirts/reserva-video-7.jpg" 
+            "/shirts/casaco-7.jpg"
         ],
-        "name": "Camisa",
-        "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium esse eaque consectetur ullam ducimus nulla sapiente. Harum ab neque autem, facilis vero totam aspernatur doloribus? Aut doloremque vero dolorem blanditiis!",
-        "price": 169.00
+        "name": "Jaqueta horizon",
+        "info": "Casualidade na medida certa: essa é a vibe da Jaqueta Casual Horizon! Ela é perfeita para trabalhar nas sobreposições, funcionando bem por cima de uma camisa ou até mesmo de uma camiseta. E você pode usá-la da sua maneira favorita, com a gola em sherpa ou sem, já que ela é removível. A peça tem forro interno pra aquecer nas temperaturas mais baixas, fazendo dela não só um item com design incrível, mas também funcional e confortável. Ao comprar esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P.",
+        "color": "marrom",
+        "class": "casaco",
+        "price": 769.90,
+        "rating": 4.9
+    },
+    {
+        "id": "1047",
+        "image": [
+            "/shirts/casaco-8.jpg"
+        ],
+        "name": "Casaco moletom basico",
+        "info": "Basico é perfeito para quem busca conforto e estilo no dia a dia. Produzido em tecido macio e resistente, proporciona uma sensação aconchegante ao vestir. Com um design clean e moderno, é o complemento ideal para compor looks despojados e cheios de personalidade. Disponível em diversas cores, você pode escolher aquela que mais combina com o seu estilo. Seu zíper frontal garante praticidade na hora de vestir e ajustar a peça ao seu gosto. Versátil e fácil de combinar, o Casaco Moletom Ziper Basico é uma opção versátil para todas as ocasiões. Seja para um passeio no parque, uma ida ao cinema ou até mesmo para o trabalho, ele será seu companheiro fiel. Invista em conforto e estilo com esse casaco incrível! Comprando esta peça, você viabiliza cinco pratos de comida através do nosso Programa 1P5P. Produto produzido eticamente no Brasil.",
+        "color": "preto",
+        "class": "casaco",
+        "price": 259.90,
+        "rating": 4.7
+    },
+    {
+        "id": "1254",
+        "image": [
+            "/shirts/casaco-9.jpg"
+        ],
+        "name": "Casaco moletom preto com capuz",
+        "info": "Basico é perfeito para quem busca conforto e estilo no dia a dia. Produzido em tecido macio e resistente, proporciona uma sensação aconchegante ao vestir. Com um design clean e moderno, é o complemento ideal para compor looks despojados e cheios de personalidade. Disponível em diversas cores, você pode escolher aquela que mais combina com o seu estilo. Seu zíper frontal garante praticidade na hora de vestir e ajustar a peça ao seu gosto. Versátil e fácil de combinar, o Casaco Moletom Ziper Basico é uma opção versátil para todas as ocasiões. Seja para um passeio no parque, uma ida ao cinema ou até mesmo para o trabalho, ele será seu companheiro fiel. Invista em conforto e estilo com esse casaco incrível! Comprando esta peça, você viabiliza cinco pratos de comida através do nosso Programa 1P5P. Produto produzido eticamente no Brasil.",
+        "color": "preto",
+        "class": "casaco",
+        "price": 359.90,
+        "rating": 4.7
+    },
+    {
+        "id": "2335",
+        "image": [
+            "/shirts/casaco-4.jpg"
+        ],
+        "name": "Sueter moletom londres",
+        "info": "O Suéter Moletom Londres é o abraço que você pode vestir! Feito em moletom 100% algodão com acabamento peletizado, ele é macio e super aconchegante, com aquela pegada clássica que fica entre o urbano e o casual, mixando despojamento e elegância. O bordado monocromático do pica-pau no peito é o detalhe que faz toda a diferença e a etiqueta tricolor é o selo de autenticidade. Esse suéter é a prova de que você não precisa sacrificar o conforto pelo estilo. Suéter produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P. O modelo tem 1,86 m de altura, 99 cm de tórax e veste M.",
+        "color": "azul",
+        "class": "casaco",
+        "price": 159.90,
+        "rating": 4.9
+    },
+    {
+        "id": "2334",
+        "image": [
+            "/shirts/casaco-3.jpg"
+        ],
+        "name": "Sueter moletom londres",
+        "info": "O Suéter Moletom Londres é o abraço que você pode vestir! Feito em moletom 100% algodão com acabamento peletizado, ele é macio e super aconchegante, com aquela pegada clássica que fica entre o urbano e o casual, mixando despojamento e elegância. O bordado monocromático do pica-pau no peito é o detalhe que faz toda a diferença e a etiqueta tricolor é o selo de autenticidade. Esse suéter é a prova de que você não precisa sacrificar o conforto pelo estilo. Suéter produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P. O modelo tem 1,86 m de altura, 99 cm de tórax e veste M.",
+        "color": "azul",
+        "class": "casaco",
+        "price": 159.90,
+        "rating": 4.7
+    },
+    {
+        "id": "2333",
+        "image": [
+            "/shirts/casaco-2.jpg"
+        ],
+        "name": "Sueter moletom londres",
+        "info": "O Suéter Moletom Londres é o abraço que você pode vestir! Feito em moletom 100% algodão com acabamento peletizado, ele é macio e super aconchegante, com aquela pegada clássica que fica entre o urbano e o casual, mixando despojamento e elegância. O bordado monocromático do pica-pau no peito é o detalhe que faz toda a diferença e a etiqueta tricolor é o selo de autenticidade. Esse suéter é a prova de que você não precisa sacrificar o conforto pelo estilo. Suéter produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P. O modelo tem 1,86 m de altura, 99 cm de tórax e veste M.",
+        "color": "verde",
+        "class": "casaco",
+        "price": 159.90,
+        "rating": 4.7
+    },
+    {
+        "id": "2332",
+        "image": [
+            "/shirts/casaco-1.jpg"
+        ],
+        "name": "Sueter moletom londres",
+        "info": "O Suéter Moletom Londres é o abraço que você pode vestir! Feito em moletom 100% algodão com acabamento peletizado, ele é macio e super aconchegante, com aquela pegada clássica que fica entre o urbano e o casual, mixando despojamento e elegância. O bordado monocromático do pica-pau no peito é o detalhe que faz toda a diferença e a etiqueta tricolor é o selo de autenticidade. Esse suéter é a prova de que você não precisa sacrificar o conforto pelo estilo. Suéter produzido eticamente no Brasil. Comprando esta peça, você viabiliza cinco pratos de comida através do nosso programa 1P5P. O modelo tem 1,86 m de altura, 99 cm de tórax e veste M.",
+        "color": "verde",
+        "class": "casaco",
+        "price": 159.90,
+        "rating": 4.7
+    },
+    {
+        "id": "3334",
+        "image": [
+            "/shirts/calca-4.jpg"
+        ],
+        "name": "Calça jeans slim",
+        "info": "A Calça Jeans Slim Sapoti é produzida em algodão com elastano, o que garante o caimento perfeito ao corpo e maior conforto. Possui modelagem slim, que valoriza o visual contemporâneo alinhado ao corpo, mas sem ser tão colada quanto à skinny.",
+        "color": "azul",
+        "class": "calça",
+        "price": 199.90,
+        "rating": 5
+    },
+    {
+        "id": "3333",
+        "image": [
+            "/shirts/calca-3.jpg"
+        ],
+        "name": "Calça jeans slim",
+        "info": "A Calça Jeans Slim Sapoti é produzida em algodão com elastano, o que garante o caimento perfeito ao corpo e maior conforto. Possui modelagem slim, que valoriza o visual contemporâneo alinhado ao corpo, mas sem ser tão colada quanto à skinny.",
+        "color": "bege",
+        "class": "calça",
+        "price": 199.90,
+        "rating": 4.9
+    },
+    {
+        "id": "3332",
+        "image": [
+            "/shirts/calca-2.jpg"
+        ],
+        "name": "Calça 5 pockets moletom",
+        "info": "Conforto não é o oposto de estilo e criamos a Calça 5 Pockets Moletom para provar isto. Ela foi produzida com um tecido de moletom exclusivo, de toque macio, pra você se sentir bem o dia inteiro.",
+        "color": "branco",
+        "class": "calça",
+        "price": 199.90,
+        "rating": 4.7
+    },
+    {
+        "id": "3331",
+        "image": [
+            "/shirts/calca-1.jpg"
+        ],
+        "name": "Calça 5 pockets moletom",
+        "info": "Conforto não é o oposto de estilo e criamos a Calça 5 Pockets Moletom para provar isto. Ela foi produzida com um tecido de moletom exclusivo, de toque macio, pra você se sentir bem o dia inteiro.",
+        "color": "preto",
+        "class": "calça",
+        "price": 199.90,
+        "rating": 4.7
     }
 ]

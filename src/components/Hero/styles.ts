@@ -2,29 +2,25 @@ import styled from 'styled-components'
 
 const HeroContainer = styled.section`
   width: 100%;
-  height: 40rem;
   padding: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  user-select: none;
 
   .align-text {
-    background: black;
+    background: ${({ theme }) => theme.colors.gray_900};
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 37rem;
-    width: 98%;
-    z-index: 2;
-    position: absolute;
+    width: 100%;
     color: #fff;
     text-transform: uppercase;
+    padding: 2rem;
 
-    .align-top-text {
+    .align-left-text {
       width: 100%;
-      padding: 2rem;
 
       h2 {
         font-size: ${({ theme }) => theme.fontsSize.extraLarge};
@@ -32,15 +28,18 @@ const HeroContainer = styled.section`
         margin-bottom: 1rem;
       }
 
-      a {
+      p {
         text-decoration: underline;
         color: #fff;
       }
     }
+  }
 
-    h1 {
-      font-size: 7.8rem;
-    }
+  span {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 600;
+    white-space: nowrap;
   }
 `
 

@@ -13,6 +13,8 @@ export interface Product {
   image: string[]
   name: string
   info: string
+  color: string
+  class: string
   price: number
 }
 

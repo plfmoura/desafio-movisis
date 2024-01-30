@@ -10,19 +10,21 @@ export default function Header() {
   return (
     <Styles.Container>
       <Styles.NavContainer className="nav-container">
-        <span>OCURRENCE</span>
+        <Link to="/">
+          <img src="/reserva-logo.png" alt="branding logo" />
+        </Link>
         <ul className="menu-container">
           <li className="menu-item">
-            <Link to="/">ABOUT</Link>
+            <Link to="/">ÍNICIO</Link>
           </li>
           <li className="menu-item">
-            <Link to="/">MENS</Link>
+            <Link to="/">MASCULINO</Link>
           </li>
           <li className="menu-item">
-            <Link to="/">WOMENS</Link>
+            <Link to="/">FEMININO</Link>
           </li>
           <li className="menu-item">
-            <Link to="/">CONTACT</Link>
+            <Link to="/">CONTATO</Link>
           </li>
         </ul>
         <ul className="icons-container">

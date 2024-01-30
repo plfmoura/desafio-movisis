@@ -5,6 +5,7 @@ import Header from './components/Header'
 import { Products } from './pages/Products'
 import Hero from './components/Hero'
 import ProductDetails from './pages/ProductDetails'
+import Footer from './components/Footer'
 
 export function Router() {
   const location = useLocation()
@@ -17,9 +18,13 @@ export function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product/:productId" element={<ProductDetails />} />
+        <Route path="/products/list/:categoryId" element={<Products />} />
+        <Route
+          path="/products/details/:productId"
+          element={<ProductDetails />}
+        />
       </Routes>
+      <Footer />
     </>
   )
 }

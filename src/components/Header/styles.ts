@@ -6,6 +6,10 @@ const Container = styled.main`
   width: 100%;
   height: 3rem;
 
+  img {
+    height: 1.5rem;
+  }
+
   nav {
     display: flex;
     width: 100%;

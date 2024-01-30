@@ -24,8 +24,8 @@ export function Cart() {
         <section className="align-cart-content">
           <Styles.CartContent>
             <div className="cart-content-header">
-              <h3>Cart</h3>
-              <button onClick={clearCart}>Remove All</button>
+              <h3>Carrinho</h3>
+              <button onClick={clearCart}>Remover todos</button>
             </div>
             <div className="align-cards-container">
               {uniqueProductsArray.length > 0 &&
@@ -36,17 +36,17 @@ export function Cart() {
           </Styles.CartContent>
           <div className="pricing-container">
             <Styles.DiscountContent>
-              <h3>Discount Code</h3>
+              <h3>Cupom</h3>
               {coupon.code === '' ? (
                 <div>
                   <Label />
-                  <input type="text" placeholder="insert coupon" />
+                  <input type="text" placeholder="insira seu cupom" />
                   <button
                     onClick={() =>
                       setCoupon({ code: 'MEUCUPOM', discount: 10 })
                     }
                   >
-                    check
+                    Verificar
                   </button>
                 </div>
               ) : (
@@ -63,7 +63,7 @@ export function Cart() {
               )}
             </Styles.DiscountContent>
             <Styles.PricingContent>
-              <h3>Pricing Details</h3>
+              <h3>Valor</h3>
               <div className="align-price-feedback">
                 {coupon.code !== '' && (
                   <div>
@@ -79,13 +79,15 @@ export function Cart() {
                 </div>
               </div>
               <button>
-                <Lock fontSize="small" /> Place Order
+                <Lock fontSize="small" /> Ir para pagamento
               </button>
             </Styles.PricingContent>
           </div>
         </section>
       ) : (
-        <span>cart empty</span>
+        <section className="align-empty-content">
+          <span>Carrinho de compras vazio</span>
+        </section>
       )}
       <Promo />
     </Styles.CartContainer>

@@ -2,17 +2,31 @@ import styled from 'styled-components'
 
 const ProductContainer = styled.main`
   width: 100%;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
   margin-top: 3rem;
+  min-height: 100vh;
+  animation: appears-content 200ms ease-in-out normal;
 
-  .card-container {
-    img {
-      pointer-events: none;
+  @keyframes appears-content {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
+
+  img {
+    pointer-events: none;
+  }
+`
+
+const ProductContent = styled.article`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 `
 
 const ProductGalleryContainer = styled.div`
@@ -23,31 +37,23 @@ const ProductGalleryContainer = styled.div`
 
   .product-active-image {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: gray;
     object-fit: cover;
-  }
-
-  .product-gallery-mini {
-    height: 150px;
-    display: flex;
-    gap: 1rem;
-
-    img {
-      background-color: #333;
-      flex: 1;
-    }
   }
 `
 
 const ProductInfoContainer = styled.div`
   width: 400px;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  .product-title,
+  .product-title {
+    font-size: ${({ theme }) => theme.fontsSize.large};
+  }
+
   .product-price {
     font-size: ${({ theme }) => theme.fontsSize.extraLarge};
   }
@@ -70,4 +76,5 @@ export default {
   ProductContainer,
   ProductGalleryContainer,
   ProductInfoContainer,
+  ProductContent,
 }

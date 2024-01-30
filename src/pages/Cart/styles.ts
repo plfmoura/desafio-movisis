@@ -8,6 +8,16 @@ const CartContainer = styled.main`
   margin: 2.5rem auto 0;
   min-height: 100vh;
   color: ${({ theme }) => theme.colors.gray_600};
+  animation: appears-content 200ms ease-in-out normal;
+
+  @keyframes appears-content {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   .cart-content-header {
     display: flex;
@@ -36,6 +46,12 @@ const CartContainer = styled.main`
     flex-direction: column;
     gap: 1rem;
     width: 30%;
+  }
+
+  .align-empty-content {
+    min-height: 50vh;
+    display: grid;
+    place-content: center;
   }
 `
 
