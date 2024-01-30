@@ -4,11 +4,21 @@ const CartContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
+  width: 80%;
+  max-width: 1560px;
   margin: 2.5rem auto 0;
   min-height: 100vh;
   color: ${({ theme }) => theme.colors.gray_600};
   animation: appears-content 200ms ease-in-out normal;
+
+  @media screen and (max-width: 1280px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
 
   @keyframes appears-content {
     from {
@@ -119,6 +129,15 @@ const PricingContent = styled.div`
     gap: 0.4rem;
     border-radius: 5px;
     margin-top: 1rem;
+  }
+
+  .price-discount-value {
+    text-decoration: line-through;
+    opacity: 0.8;
+  }
+
+  .price-total-value {
+    font-weight: 600;
   }
 `
 

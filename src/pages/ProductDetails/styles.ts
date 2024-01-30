@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 const ProductContainer = styled.main`
   width: 100%;
+  max-width: 1560px;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   min-height: 100vh;
   animation: appears-content 200ms ease-in-out normal;
 

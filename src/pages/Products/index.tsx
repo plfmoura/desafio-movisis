@@ -20,9 +20,11 @@ export function Products() {
 
   return (
     <Styles.Container>
-      {filteredProducts.map((item) => (
-        <ProductCard data={item} key={item.id} />
-      ))}
+      <Styles.Content>
+        {filteredProducts.map((item) => (
+          <ProductCard data={item} key={item.id} />
+        ))}
+      </Styles.Content>
     </Styles.Container>
   )
 }

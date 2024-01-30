@@ -12,20 +12,53 @@ const GridContainer = styled.section`
   user-select: none;
 
   @media screen and (max-width: 1024px) {
+    height: fit-content;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 60rem;
+  }
+
+  @media screen and (max-width: 580px) {
     display: none;
   }
 
   h3 {
-    font-size: ${({ theme }) => theme.fontsSize.extraLarge};
+    font-size: ${({ theme }) => theme.fontsSize.large};
+
+    @media screen and (max-width: 1024px) {
+      font-size: ${({ theme }) => theme.fontsSize.medium};
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: ${({ theme }) => theme.fontsSize.large};
+    }
   }
 
   p {
     font-size: ${({ theme }) => theme.fontsSize.large};
+
+    @media screen and (max-width: 1024px) {
+      font-size: ${({ theme }) => theme.fontsSize.normal};
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: ${({ theme }) => theme.fontsSize.large};
+    }
   }
 
   span {
-    font-size: 8rem;
+    font-size: 5.5rem;
     font-weight: 500;
+
+    @media screen and (max-width: 1024px) {
+      font-size: ${({ theme }) => theme.fontsSize.doubleExtraLarge};
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 5.5rem;
+    }
   }
 
   .category:nth-child(1) {
@@ -34,18 +67,28 @@ const GridContainer = styled.section`
     background: url('/category-2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+      height: 20rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     color: #fff;
     padding: 2rem;
 
     h3 {
       width: 200px;
-    }
-
-    p {
-      position: absolute;
-      bottom: 0;
+      color: ${({ theme }) => theme.colors.white};
+      font-weight: 600;
+      background-color: ${({ theme }) => theme.colors.gray_800};
+      padding: 1rem;
     }
   }
 
@@ -57,30 +100,31 @@ const GridContainer = styled.section`
     background-position: center;
     cursor: pointer;
 
+    @media screen and (max-width: 1024px) {
+      height: 20rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
 
-    .promo-text {
-      position: absolute;
-      bottom: 0;
-      white-space: nowrap;
-
-      @media screen and (max-width: 1024px) {
-        white-space: normal;
-        position: relative;
-      }
-    }
-
     div {
-      height: 100%;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      width: 100%;
     }
 
-    div:last-of-type {
-      height: fit-content;
+    .promo-text {
+      color: ${({ theme }) => theme.colors.white};
+      font-weight: 600;
+      background-color: ${({ theme }) => theme.colors.gray_800};
+      padding: 1rem;
+      width: fit-content;
     }
   }
 `

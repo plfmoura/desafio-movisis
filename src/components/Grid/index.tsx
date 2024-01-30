@@ -7,7 +7,7 @@ export default function Grid() {
   return (
     <Styles.GridContainer>
       <div
-        className="category"
+        className="category right-content"
         onClick={() => navigate(`/products/list/casaco`)}
       >
         <h3>Casacos, Jaquetas & Moletons</h3>
@@ -17,7 +17,7 @@ export default function Grid() {
         </p>
       </div>
       <div
-        className="category"
+        className="category left-content"
         onClick={() => navigate(`/products/list/camisa`)}
       >
         <div>
@@ -25,15 +25,11 @@ export default function Grid() {
             Camisa <br />
             Básica
           </h3>
-          <p className="promo-text">
-            Ficou mais fácil garantir camisetas aqui na Reserva.
-          </p>
-        </div>
-        <div>
           <p>
             a partir de <br /> <span>$79,90</span>
           </p>
         </div>
+        <p className="promo-text">Garanta camisetas de qualidade.</p>
       </div>
     </Styles.GridContainer>
   )

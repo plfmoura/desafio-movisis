@@ -40,7 +40,7 @@ export default function ProductDetails() {
                   </h2>
                   <div className="align-card-rating">
                     <Star />
-                    <span>{product.rating}</span>
+                    <span>{product.rating.toFixed(1)}</span>
                   </div>
                 </div>
                 <button

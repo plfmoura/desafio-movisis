@@ -43,7 +43,7 @@ export function Cart() {
                   <input type="text" placeholder="insira seu cupom" />
                   <button
                     onClick={() =>
-                      setCoupon({ code: 'MEUCUPOM', discount: 30 })
+                      setCoupon({ code: 'MOVISIS#30', discount: 30 })
                     }
                   >
                     Verificar
@@ -68,12 +68,14 @@ export function Cart() {
                 {coupon.code !== '' && (
                   <div>
                     <p>Discount</p>
-                    <p>${((amount * coupon.discount) / 100).toFixed(2)}</p>
+                    <p className="price-discount-value">
+                      ${((amount * coupon.discount) / 100).toFixed(2)}
+                    </p>
                   </div>
                 )}
                 <div>
                   <p>Total</p>
-                  <p>
+                  <p className="price-total-value">
                     ${(amount - (amount * coupon.discount) / 100).toFixed(2)}
                   </p>
                 </div>

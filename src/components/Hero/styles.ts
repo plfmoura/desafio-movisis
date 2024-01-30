@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 const HeroContainer = styled.section`
   width: 100%;
+  max-width: 1560px;
   padding: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+
   user-select: none;
   color: #333;
 

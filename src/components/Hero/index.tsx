@@ -22,7 +22,7 @@ export default function Hero() {
       <Dialog toClose={handleClose} controller={open}>
         <Styles.DialogContainer className="align-dialog-content">
           <p>Use o código promocional</p>
-          <span>PROMOCAO#30</span>
+          <span>MOVISIS#30</span>
           <p>no momento de sua compra.</p>
         </Styles.DialogContainer>
       </Dialog>

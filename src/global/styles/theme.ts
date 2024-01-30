@@ -13,6 +13,7 @@ export default {
 
     primary: '#00D8EC',
     secondary: '#1E1E26',
+    tertiary: '#e5002b',
   },
   fonts: {
     primary: 'Montserrat',

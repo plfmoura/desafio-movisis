@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 
-const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const Container = styled.main`
   width: 100%;
+  max-width: 1560px;
   min-height: 100vh;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   animation: appears-content 200ms ease-in-out normal;
 
   @keyframes appears-content {
@@ -27,6 +23,14 @@ const Container = styled.header`
   }
 `
 
+const Content = styled.section`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+`
+
 export default {
   Container,
+  Content,
 }

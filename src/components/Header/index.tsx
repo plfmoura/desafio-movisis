@@ -18,10 +18,10 @@ export default function Header() {
             <Link to="/">ÍNICIO</Link>
           </li>
           <li className="menu-item">
-            <Link to="/">MASCULINO</Link>
+            <Link to="/products/list/all">MASCULINO</Link>
           </li>
           <li className="menu-item">
-            <Link to="/">FEMININO</Link>
+            <Link to="/products/list/all">FEMININO</Link>
           </li>
           <li className="menu-item">
             <Link to="/">CONTATO</Link>
@@ -44,37 +44,6 @@ export default function Header() {
           </li>
         </ul>
       </Styles.NavContainer>
-      {/* <Styles.NavShortcuts className="shortcuts-container">
-        <ul className="shortcuts-list-content">
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-          <li className="shortcuts-item">
-            <Link to="/products">ATALHO</Link>
-          </li>
-        </ul>
-      </Styles.NavShortcuts> */}
     </Styles.Container>
   )
 }
