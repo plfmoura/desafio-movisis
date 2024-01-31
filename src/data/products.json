@@ -9,7 +9,8 @@
         "color": "rosa",
         "class": "camisa",
         "price": 79.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-30T12:00:00.000Z"
     },
     {
         "id": "1021",
@@ -21,7 +22,8 @@
         "color": "bege",
         "class": "camisa",
         "price": 89.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "1022",
@@ -33,7 +35,8 @@
         "color": "branco",
         "class": "camisa",
         "price": 119.90,
-        "rating": 5
+        "rating": 5,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1023",
@@ -45,7 +48,8 @@
         "color": "branco",
         "class": "camisa",
         "price": 129.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1024",
@@ -57,7 +61,8 @@
         "color": "preto",
         "class": "camisa",
         "price": 79.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1025",
@@ -69,7 +74,8 @@
         "color": "branco",
         "class": "camisa",
         "price": 99.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1101",
@@ -81,7 +87,8 @@
         "color": "branco",
         "class": "polo",
         "price": 149.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1102",
@@ -93,7 +100,8 @@
         "color": "vermelho",
         "class": "polo",
         "price": 149.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1103",
@@ -105,7 +113,8 @@
         "color": "branco",
         "class": "polo",
         "price": 149.90,
-        "rating": 5
+        "rating": 5,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1104",
@@ -117,7 +126,8 @@
         "color": "azul",
         "class": "polo",
         "price": 149.90,
-        "rating": 5
+        "rating": 5,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1105",
@@ -129,7 +139,8 @@
         "color": "preto",
         "class": "polo",
         "price": 149.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "1106",
@@ -141,7 +152,8 @@
         "color": "branco",
         "class": "polo",
         "price": 149.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-28T12:00:00.000Z"
     },
     {
         "id": "3420",
@@ -153,7 +165,8 @@
         "color": "preto",
         "class": "casaco",
         "price": 189.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "9800",
@@ -165,7 +178,8 @@
         "color": "preto",
         "class": "casaco",
         "price": 159.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "6755",
@@ -177,7 +191,8 @@
         "color": "marrom",
         "class": "casaco",
         "price": 769.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "1047",
@@ -189,7 +204,8 @@
         "color": "preto",
         "class": "casaco",
         "price": 259.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "1254",
@@ -201,7 +217,8 @@
         "color": "preto",
         "class": "casaco",
         "price": 359.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "2335",
@@ -213,7 +230,8 @@
         "color": "azul",
         "class": "casaco",
         "price": 159.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "2334",
@@ -225,7 +243,8 @@
         "color": "azul",
         "class": "casaco",
         "price": 159.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "2333",
@@ -237,7 +256,8 @@
         "color": "verde",
         "class": "casaco",
         "price": 159.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "2332",
@@ -249,7 +269,8 @@
         "color": "verde",
         "class": "casaco",
         "price": 159.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "3334",
@@ -261,7 +282,8 @@
         "color": "azul",
         "class": "calça",
         "price": 199.90,
-        "rating": 5
+        "rating": 5,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "3333",
@@ -273,7 +295,8 @@
         "color": "bege",
         "class": "calça",
         "price": 199.90,
-        "rating": 4.9
+        "rating": 4.9,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "3332",
@@ -285,7 +308,8 @@
         "color": "branco",
         "class": "calça",
         "price": 199.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     },
     {
         "id": "3331",
@@ -297,6 +321,7 @@
         "color": "preto",
         "class": "calça",
         "price": 199.90,
-        "rating": 4.7
+        "rating": 4.7,
+        "createdAt": "2024-01-29T12:00:00.000Z"
     }
 ]

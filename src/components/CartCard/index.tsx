@@ -17,7 +17,7 @@ export type CardProps = {
 }
 
 export default function CartCard({ data }: CardProps) {
-  const { products, removeCartProduct, addCartProduct } =
+  const { products, removeCartProduct, addCartProduct, removeSelected } =
     useContext(CartContext)
 
   const handleCalculateAmount = (id: string) => {
@@ -25,7 +25,7 @@ export default function CartCard({ data }: CardProps) {
 
     const totalAmount = filteredArray.reduce((sum, item) => sum + item.price, 0)
 
-    return <h2>${totalAmount.toFixed(2)}</h2>
+    return <h2>R${totalAmount.toFixed(2)}</h2>
   }
 
   return (
@@ -37,8 +37,8 @@ export default function CartCard({ data }: CardProps) {
           <p className="card-info">{data.info}</p>
         </div>
         <div className="card-actions">
-          <button>Remove</button>
-          <button>Add favorites</button>
+          <button onClick={() => removeSelected(data.id)}>Remover</button>
+          <button>Favoritar</button>
         </div>
       </Styles.CardInfo>
       <Styles.CardPrice className="align-card-price">

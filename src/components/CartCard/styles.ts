@@ -32,6 +32,10 @@ const CardInfo = styled.div`
   .card-actions {
     display: flex;
     gap: 1rem;
+
+    button:first-of-type {
+      color: ${({ theme }) => theme.colors.tertiary};
+    }
   }
 `
 

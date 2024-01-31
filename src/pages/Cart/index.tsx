@@ -67,16 +67,16 @@ export function Cart() {
               <div className="align-price-feedback">
                 {coupon.code !== '' && (
                   <div>
-                    <p>Discount</p>
+                    <p>Desconto</p>
                     <p className="price-discount-value">
-                      ${((amount * coupon.discount) / 100).toFixed(2)}
+                      R$ {((amount * coupon.discount) / 100).toFixed(2)}
                     </p>
                   </div>
                 )}
                 <div>
                   <p>Total</p>
                   <p className="price-total-value">
-                    ${(amount - (amount * coupon.discount) / 100).toFixed(2)}
+                    R$ {(amount - (amount * coupon.discount) / 100).toFixed(2)}
                   </p>
                 </div>
               </div>

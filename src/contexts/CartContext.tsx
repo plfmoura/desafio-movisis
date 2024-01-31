@@ -27,6 +27,7 @@ interface CartContextProps {
   removeCartProduct: (id: string) => void
   addCartProduct: (id: string) => void
   clearCart: () => void
+  removeSelected: (id: string) => void
 }
 
 const defaultValues: CartContextProps = {
@@ -37,6 +38,7 @@ const defaultValues: CartContextProps = {
   removeCartProduct: () => {},
   addCartProduct: () => {},
   clearCart: () => {},
+  removeSelected: () => {},
 }
 
 type CartContextProviderProps = {
@@ -102,6 +104,12 @@ export function CartProvider({ children }: CartContextProviderProps) {
     }
   }
 
+  const removeSelected = (id: string) => {
+    const restProducts = products.filter((item) => item.id !== id)
+    setProducts(restProducts)
+    localStorage.setItem('cart', JSON.stringify(restProducts))
+  }
+
   const clearCart = () => {
     setAmount(0)
     setProducts([])
@@ -116,6 +124,7 @@ export function CartProvider({ children }: CartContextProviderProps) {
     removeCartProduct,
     addCartProduct,
     clearCart,
+    removeSelected,
   }
 
   return (
