@@ -25,12 +25,24 @@ const Container = styled.main`
 
 const Content = styled.section`
   display: flex;
-  justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+
+  .align-products-cards {
+    width: 80%;
+    background-color: blue;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+`
+
+const Filter = styled.aside`
+  width: 20%;
+  background-color: red;
 `
 
 export default {
   Container,
   Content,
+  Filter,
 }
