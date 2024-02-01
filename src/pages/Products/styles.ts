@@ -70,6 +70,11 @@ const Filter = styled.aside`
     flex-direction: column;
     gap: 1rem;
 
+    .range-values {
+      display: flex;
+      justify-content: space-between;
+    }
+
     .range-slider {
       width: 100%;
       height: 2px;
