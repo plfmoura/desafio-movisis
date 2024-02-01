@@ -81,7 +81,7 @@ export function Cart() {
                 </div>
               </div>
               <button>
-                <Lock fontSize="small" /> Ir para pagamento
+                <Lock fontSize="small" /> FINALIZAR COMPRA
               </button>
             </Styles.PricingContent>
           </div>

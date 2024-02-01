@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Desafio movisis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💻 Projeto
 
-Currently, two official plugins are available:
+Construir um site modelo de e-commerce que permita o gerenciamento de produtos e
+realize um processo de checkout simples.
+Os produtos podem ser de escolha livre, desde que sejam coerentes em um tema (por
+exemplo, acessórios de computador, livros, plantas etc.).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Tecnologias
 
-## Expanding the ESLint configuration
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [ReactJs]
+- [TypeScript]
+- [StyledComponents]
+- [React Router Dom]
+- [Material UI]
+- [react-slider]
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Instalando o Desafio
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Para instalar o Desafio, siga estas etapas:
+
+Linux, macOS e Windows:
 ```
+git clone https://github.com/plfmoura/desafio-movisis.git
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+cd desafio-movisis 
+
+code .
+
+npm i
+
+npm run dev
+
+```
