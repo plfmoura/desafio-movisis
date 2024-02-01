@@ -38,7 +38,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="icon-item">
-            <Link to="/profile">
+            <Link to="/">
               <Person />
             </Link>
           </li>
