@@ -45,6 +45,26 @@ const NavContainer = styled.nav`
   .icons-container {
     gap: 1rem;
   }
+
+  .cart-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: ${({ theme }) => theme.colors.tertiary};
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      margin: 0 0 1rem 1.2rem;
+    }
+  }
 `
 
 export default {

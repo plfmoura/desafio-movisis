@@ -32,9 +32,9 @@ export default function Header() {
             <Search />
           </li>
           <li className="icon-item">
-            <Link to="/cart">
+            <Link to="/cart" className="cart-icon-container">
               <ShoppingBag />
-              {products.length !== 0 && products.length}
+              {products.length !== 0 && <span>{products.length}</span>}
             </Link>
           </li>
           <li className="icon-item">
