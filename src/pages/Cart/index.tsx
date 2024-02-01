@@ -1,14 +1,17 @@
 import { useContext, useState } from 'react'
 import { CartContext } from '../../contexts/CartContext'
 import CartCard from '../../components/CartCard'
-
-import Styles from './styles'
 import { Close, Label, Lock } from '@mui/icons-material'
 import Promo from '../../components/Promo'
+import { useNavigate } from 'react-router-dom'
+
+import Styles from './styles'
 
 export function Cart() {
   const { products, clearCart, amount } = useContext(CartContext)
   const [coupon, setCoupon] = useState({ code: '', discount: 0 })
+  const [status, setStatus] = useState('Carrinho de compras vazio')
+  const navigate = useNavigate()
 
   const uniqueProductMap = new Map()
 
@@ -17,6 +20,39 @@ export function Cart() {
   })
 
   const uniqueProductsArray = Array.from(uniqueProductMap.values())
+
+  const handlePurchaseEnd = () => {
+    const history = localStorage.getItem('purchase')
+
+    const purchase = {
+      data: products,
+      price: (amount - (amount * coupon.discount) / 100).toFixed(2),
+      createdAt: new Date().toLocaleDateString(),
+    }
+
+    if (!history) {
+      localStorage.setItem('purchase', JSON.stringify([purchase]))
+      clearCart()
+      setStatus('Compra efetuada com sucesso!')
+      setTimeout(() => {
+        setStatus('Carrinho de compras vazio')
+        navigate('/')
+      }, 3000)
+      return
+    }
+
+    if (history) {
+      const purchasesHistory = JSON.parse(history)
+      purchasesHistory.push(purchase)
+      localStorage.setItem('purchase', JSON.stringify(purchasesHistory))
+      clearCart()
+      setStatus('Compra efetuada com sucesso!')
+      setTimeout(() => {
+        setStatus('Carrinho de compras vazio')
+        navigate('/')
+      }, 3000)
+    }
+  }
 
   return (
     <Styles.CartContainer>
@@ -80,7 +116,7 @@ export function Cart() {
                   </p>
                 </div>
               </div>
-              <button>
+              <button onClick={handlePurchaseEnd}>
                 <Lock fontSize="small" /> FINALIZAR COMPRA
               </button>
             </Styles.PricingContent>
@@ -88,7 +124,7 @@ export function Cart() {
         </section>
       ) : (
         <section className="align-empty-content">
-          <span>Carrinho de compras vazio</span>
+          <h3>{status}</h3>
         </section>
       )}
       <Promo />

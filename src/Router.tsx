@@ -6,6 +6,7 @@ import { Products } from './pages/Products'
 import Hero from './components/Hero'
 import ProductDetails from './pages/ProductDetails'
 import Footer from './components/Footer'
+import { Profile } from './pages/Profile'
 
 export function Router() {
   const location = useLocation()
@@ -23,6 +24,7 @@ export function Router() {
           path="/products/details/:productId"
           element={<ProductDetails />}
         />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </>
