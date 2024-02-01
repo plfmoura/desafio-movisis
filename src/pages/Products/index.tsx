@@ -101,6 +101,9 @@ export function Products() {
           {filteredProducts.map((item) => (
             <ProductCard data={item} key={item.id} />
           ))}
+          {filteredProducts.length === 0 && (
+            <span>Nenhum produto encontrado</span>
+          )}
         </div>
       </Styles.Content>
     </Styles.Container>
