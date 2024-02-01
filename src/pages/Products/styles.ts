@@ -105,12 +105,45 @@ const Filter = styled.aside`
       flex-direction: column;
       gap: 1rem;
       user-select: none;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
     }
   }
+
+  .filter-color-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .color-values {
+      display: flex;
+      gap: 0.5rem;
+      height: fit-content;
+      flex-wrap: wrap;
+    }
+  }
+`
+
+type BoxColorProps = {
+  color: string
+}
+
+const ColorBox = styled.span<BoxColorProps>`
+  background-color: ${({ color }) => color};
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  border: 1px solid #33333350;
 `
 
 export default {
   Container,
   Content,
   Filter,
+  ColorBox,
 }

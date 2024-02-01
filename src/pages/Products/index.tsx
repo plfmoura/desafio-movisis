@@ -6,6 +6,7 @@ import ProductCard from '../../components/ProductCard'
 import ReactSlider from 'react-slider'
 
 import Styles from './styles'
+import { Close } from '@mui/icons-material'
 
 type PriceFilterProps = {
   lower: number
@@ -84,10 +85,34 @@ export function Products() {
           </div>
           <div className="filter-type-container">
             <label className="filter-title">Filtrar por categoria</label>
-            <div className="type-values">
-              <span>+ Camisas</span>
-              <span>+ Casacos</span>
-              <span>+ Calças</span>
+            <div
+              className="type-values"
+              onClick={() => alert('Não adicionado')}
+            >
+              <span>
+                <Close /> Camisas
+              </span>
+              <span>
+                <Close /> Casacos
+              </span>
+              <span>
+                <Close /> Calças
+              </span>
+            </div>
+            <div className="filter-actions">
+              <button onClick={() => alert('Não adicionado')}>Filtrar</button>
+              <button onClick={() => alert('Não adicionado')}>Remover</button>
+            </div>
+          </div>
+          <div className="filter-color-container">
+            <label className="filter-title">Filtrar por cor</label>
+            <div
+              className="color-values"
+              onClick={() => alert('Não adicionado')}
+            >
+              {filteredProducts.map((item, key) => (
+                <Styles.ColorBox key={key} color={item.color} />
+              ))}
             </div>
             <div className="filter-actions">
               <button onClick={() => alert('Não adicionado')}>Filtrar</button>
