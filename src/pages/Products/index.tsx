@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Product } from '../../contexts/CartContext'
 import ProductCard from '../../components/ProductCard'
+import { Close } from '@mui/icons-material'
 import ReactSlider from 'react-slider'
 
 import Styles from './styles'
-import { Close } from '@mui/icons-material'
 
 type PriceFilterProps = {
   lower: number
@@ -39,7 +39,6 @@ export function Products() {
     const filteredProductsByRange = filteredProducts.filter(
       (item) => item.price > rangeValue[0] && item.price < rangeValue[1],
     )
-    console.log(filteredProductsByRange)
     setFilteredProducts(filteredProductsByRange)
   }
 
