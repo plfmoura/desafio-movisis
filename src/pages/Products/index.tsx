@@ -8,22 +8,14 @@ import ReactSlider from 'react-slider'
 
 import Styles from './styles'
 
-type PriceFilterProps = {
-  lower: number
-  highest: number
-}
+const MIN = 50
+const MAX = 1000
 
 export function Products() {
   const { categoryId } = useParams()
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
-  const [filteredPrice, setFilteredPrice] = useState<PriceFilterProps>({
-    lower: 0,
-    highest: 0,
-  })
-  const [rangeValue, setRangeValue] = useState<number[]>([
-    filteredPrice.lower,
-    filteredPrice.highest,
-  ])
+
+  const [rangeValue, setRangeValue] = useState<number[]>([MIN, MAX])
 
   const handleFilterByRouteParams = () => {
     if (categoryId !== 'all') {
@@ -32,7 +24,6 @@ export function Products() {
       )
     }
     setFilteredProducts(data)
-    console.log(filteredProducts)
   }
 
   const handleFilterByPrice = () => {
@@ -44,21 +35,8 @@ export function Products() {
 
   useEffect(() => {
     handleFilterByRouteParams()
-  }, [categoryId])
-
-  useEffect(() => {
-    if (filteredProducts.length > 0) {
-      const highestPrice = filteredProducts.reduce((menor, atual) =>
-        atual.price > menor.price ? atual : menor,
-      ).price
-      const lowerPrice = filteredProducts.reduce((menor, atual) =>
-        atual.price < menor.price ? atual : menor,
-      ).price
-
-      setFilteredPrice({ lower: lowerPrice, highest: highestPrice })
-      setRangeValue([lowerPrice, highestPrice])
-    }
-  }, [filteredProducts])
+    // eslint-disable-next-line
+  }, [])
 
   return (
     <Styles.Container>
@@ -73,8 +51,8 @@ export function Products() {
             <ReactSlider
               className="range-slider"
               value={rangeValue}
-              min={filteredPrice.lower}
-              max={filteredPrice.highest}
+              min={MIN}
+              max={MAX}
               onChange={setRangeValue}
             />
             <div className="filter-actions">
