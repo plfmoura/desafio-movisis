@@ -1,10 +1,11 @@
-import Styles from './styles'
 import data from '../../data/products.json'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Product } from '../../contexts/CartContext'
 import ProductCard from '../../components/ProductCard'
 import ReactSlider from 'react-slider'
+
+import Styles from './styles'
 
 type PriceFilterProps = {
   lower: number
@@ -63,21 +64,35 @@ export function Products() {
     <Styles.Container>
       <Styles.Content>
         <Styles.Filter>
-          <label>Filtrar por preço</label>
-          <div className="range-values">
-            <span>R$ {rangeValue[0].toFixed(2)}</span>
-            <span>R$ {rangeValue[1].toFixed(2)}</span>
+          <div className="filter-price-container">
+            <label className="filter-title">Filtrar por preço</label>
+            <div className="range-values">
+              <span>R$ {rangeValue[0].toFixed(2)}</span>
+              <span>R$ {rangeValue[1].toFixed(2)}</span>
+            </div>
+            <ReactSlider
+              className="range-slider"
+              value={rangeValue}
+              min={filteredPrice.lower}
+              max={filteredPrice.highest}
+              onChange={setRangeValue}
+            />
+            <div className="filter-actions">
+              <button onClick={handleFilterByPrice}>Filtrar</button>
+              <button onClick={handleFilterByRouteParams}>Remover</button>
+            </div>
           </div>
-          <ReactSlider
-            className="range-slider"
-            value={rangeValue}
-            min={filteredPrice.lower}
-            max={filteredPrice.highest}
-            onChange={setRangeValue}
-          />
-          <div className="range-actions">
-            <button onClick={handleFilterByPrice}>Filtrar</button>
-            <button onClick={handleFilterByRouteParams}>Remover</button>
+          <div className="filter-type-container">
+            <label className="filter-title">Filtrar por categoria</label>
+            <div className="type-values">
+              <span>+ Camisas</span>
+              <span>+ Casacos</span>
+              <span>+ Calças</span>
+            </div>
+            <div className="filter-actions">
+              <button onClick={() => alert('Não adicionado')}>Filtrar</button>
+              <button onClick={() => alert('Não adicionado')}>Remover</button>
+            </div>
           </div>
         </Styles.Filter>
         <div className="align-products-cards">

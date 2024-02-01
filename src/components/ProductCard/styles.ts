@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 const ProductCardContainer = styled.div`
   min-width: 270px;
-  background-color: gray;
   flex: 1;
+  max-width: 300px;
 
   img {
     width: 100%;
