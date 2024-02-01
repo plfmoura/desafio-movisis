@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Product } from '../../contexts/CartContext'
 import ProductCard from '../../components/ProductCard'
+import ReactSlider from 'react-slider'
 
 type PriceFilterProps = {
   lower: number
@@ -14,34 +15,70 @@ export function Products() {
   const { categoryId } = useParams()
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
   const [filteredPrice, setFilteredPrice] = useState<PriceFilterProps>({
-    highest: 0,
     lower: 0,
+    highest: 0,
   })
-  const [rangeValue, setRangeValue] = useState<number>(filteredPrice.lower)
+  const [rangeValue, setRangeValue] = useState<number[]>([
+    filteredPrice.lower,
+    filteredPrice.highest,
+  ])
 
-  useEffect(() => {
+  const handleFilterByRouteParams = () => {
     if (categoryId !== 'all') {
       return setFilteredProducts(
         data.filter((item) => item.class === categoryId),
       )
     }
     setFilteredProducts(data)
+    console.log(filteredProducts)
+  }
+
+  const handleFilterByPrice = () => {
+    const filteredProductsByRange = filteredProducts.filter(
+      (item) => item.price > rangeValue[0] && item.price < rangeValue[1],
+    )
+    console.log(filteredProductsByRange)
+    setFilteredProducts(filteredProductsByRange)
+  }
+
+  useEffect(() => {
+    handleFilterByRouteParams()
   }, [categoryId])
+
+  useEffect(() => {
+    if (filteredProducts.length > 0) {
+      const highestPrice = filteredProducts.reduce((menor, atual) =>
+        atual.price > menor.price ? atual : menor,
+      ).price
+      const lowerPrice = filteredProducts.reduce((menor, atual) =>
+        atual.price < menor.price ? atual : menor,
+      ).price
+
+      setFilteredPrice({ lower: lowerPrice, highest: highestPrice })
+      setRangeValue([lowerPrice, highestPrice])
+    }
+  }, [filteredProducts])
 
   return (
     <Styles.Container>
       <Styles.Content>
         <Styles.Filter>
-          <label htmlFor="rangeInput">Preço inicial</label>
-          <input
-            type="range"
-            id="rangeInput"
-            name="range"
+          <label>Filtrar por preço</label>
+          <div className="range-values">
+            <span>R$ {rangeValue[0].toFixed(2)}</span>
+            <span>R$ {rangeValue[1].toFixed(2)}</span>
+          </div>
+          <ReactSlider
+            className="range-slider"
+            value={rangeValue}
             min={filteredPrice.lower}
             max={filteredPrice.highest}
-            value={rangeValue}
+            onChange={setRangeValue}
           />
-          <span>{rangeValue}</span>
+          <div className="range-actions">
+            <button onClick={handleFilterByPrice}>Filtrar</button>
+            <button onClick={handleFilterByRouteParams}>Remover</button>
+          </div>
         </Styles.Filter>
         <div className="align-products-cards">
           {filteredProducts.map((item) => (
