@@ -28,29 +28,10 @@ export function Products() {
     setFilteredProducts(data)
   }, [categoryId])
 
-  // useEffect(() => {
-  //   if (filteredProducts.length > 0) {
-  //     const highestPrice = filteredProducts.reduce((menor, atual) =>
-  //       atual.price > menor.price ? atual : menor,
-  //     ).price
-  //     const lowerPrice = filteredProducts.reduce((menor, atual) =>
-  //       atual.price < menor.price ? atual : menor,
-  //     ).price
-
-  //     setFilteredPrice({ highest: highestPrice, lower: lowerPrice })
-  //   }
-  // }, [filteredProducts])
-
-  const handleRangeChange = (e) => {
-    const newRangeValue = parseInt(e.target.value, 10)
-    setRangeValue(newRangeValue)
-    setFilteredPrice({ ...filteredPrice, lower: newRangeValue })
-  }
-
   return (
     <Styles.Container>
       <Styles.Content>
-        {/* <Styles.Filter>
+        <Styles.Filter>
           <label htmlFor="rangeInput">Preço inicial</label>
           <input
             type="range"
@@ -59,10 +40,9 @@ export function Products() {
             min={filteredPrice.lower}
             max={filteredPrice.highest}
             value={rangeValue}
-            onChange={handleRangeChange}
           />
           <span>{rangeValue}</span>
-        </Styles.Filter> */}
+        </Styles.Filter>
         <div className="align-products-cards">
           {filteredProducts.map((item) => (
             <ProductCard data={item} key={item.id} />
