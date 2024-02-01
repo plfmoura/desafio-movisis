@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './global/styles/theme'
 import { GlobalStyle } from './global/styles/global'
 import { Router } from './Router'
-import { BrowserRouter, useLocation } from 'react-router-dom'
+import { HashRouter, useLocation } from 'react-router-dom'
 import { CartProvider } from './contexts/CartContext'
 import { useEffect } from 'react'
 
@@ -23,10 +23,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CartProvider>
-        <BrowserRouter>
+        <HashRouter>
           <ScrollToTop />
           <Router />
-        </BrowserRouter>
+        </HashRouter>
         <GlobalStyle />
       </CartProvider>
     </ThemeProvider>
