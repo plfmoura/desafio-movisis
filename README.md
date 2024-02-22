@@ -1,4 +1,4 @@
-# Desafio movisis
+# reserva-store
 
 ## 💻 Projeto
 
@@ -27,15 +27,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Material UI]
 - [react-slider]
 
-## 🚀 Instalando o Desafio
+## 🚀 Instalação
 
-Para instalar o Desafio, siga estas etapas:
+Para instalar o reserva-store, siga estas etapas:
 
 Linux, macOS e Windows:
 ```
-git clone https://github.com/plfmoura/desafio-movisis.git
+git clone https://github.com/plfmoura/reserva-store.git
 
-cd desafio-movisis 
+cd reserva-store
 
 code .
 
